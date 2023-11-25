@@ -7,10 +7,13 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@500;600;900&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -33,8 +36,8 @@
                     <input type="text">
                 </div>
                 <ul>
-                    <li><a href="cart">cart</a></li>
-                    <li><a href="user">user</a></li>
+                    <li><a href="cart"><i class="bi bi-cart3"></i></a></li>
+                    <li><a href="user"><i class="bi bi-person"></i></a></li>
                 </ul>
             </div>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -42,37 +45,185 @@
         </div>
     </nav>
     
-    <!-- HERO -->
-    <div class="hero">
-        <div class="container hero__container">
-            <div class="banners">
-                <img src="images/hero/banner.jpg" alt="">
+    <!-- BANNER -->
+    <div class="banners container">
+        <div class="mySwiper">
+            <div class="swiper-wrapper">
+                <article class="testimonial swiper-slide">
+                        <img src="images/hero/banner.jpg" alt="">
+                </article>
+                
+                <article class="testimonial swiper-slide">
+                        <img src="images/hero/banner2.jpg" alt="">
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <img src="images/hero/banner3.jpg" alt="">
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <img src="images/hero/banner4.jpg" alt="">
+                </article>
             </div>
-            <div class="hot__picks">
-                <div class="shop__category">
-                    <h3>SHOP BY CATEGORY</h3>
-                    <ul>
-                        <li><a href="">MEN</a></li>
-                        <li><a href="">WOMEN</a></li>
-                        <li><a href="">KIDS</a></li>
-                    </ul>
-                </div>
-                <div class="hot__shoes">
-                    <article>
-                        <img src="images/hero/hot_kick1.jpg" alt="">
-                    </article>
-                    <article>
-                        <img src="images/hero/hot_kick2.jpg" alt="">
-                    </article>
-                    <article>
-                        <img src="images/hero/hot_kick3.jpg" alt="">
-                    </article>
-                    <article>
-                        <img src="images/hero/hot_kick4.jpg" alt="">
-                    </article>
-                </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="container hero__container">
+        <div class="category">
+            <h3>SHOP BY CATEGORY</h3>
+            <ul>
+                <li><a href="">MEN</a></li>
+                <li><a href="">WOMEN</a></li>
+                <li><a href="">KIDS</a></li>
+            </ul>
+        </div>
+        <div class="new_kicks">
+            <p>NEW KICKS!</p>
+            <div class="new_kicks_deals">
+                <article>
+                    <div class="product">
+                        <a href="">
+                            <img src="images/hero/hot_kick1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__name">
+                        <a href="">
+                            <p>Shoe 1</p>
+                        </a>
+                        <a href="" class="cart__design">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="product">
+                        <a href="">
+                            <img src="images/hero/hot_kick2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__name">
+                        <a href="">
+                            <p>Shoe 2</p>
+                        </a>
+                        <a href="" class="cart__design">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="product">
+                        <a href="">
+                            <img src="images/hero/hot_kick3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__name">
+                        <a href="">
+                            <p>Shoe 3</p>
+                        </a>
+                        <a href="" class="cart__design">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="product">
+                        <a href="">
+                            <img src="images/hero/hot_kick4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__name">
+                        <a href="">
+                            <p>Shoe 4</p>
+                        </a>
+                        <a href="" class="cart__design">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
+
+    <!-- HOLIDAY SALE -->
+    <section class="sale">
+        <h2>HOLIDAY SALE</h2>
+        <div class="container sale__container">
+            <article>
+                <div class="sale__image">
+                    <img src="images/hero/hot_kick1.jpg" alt="">
+                </div>
+                <div class="sale__name">
+                    <a href="">
+                        <p>Shoe 4</p>
+                    </a>
+                    <div class="product_details">
+                        <p class="price">P 2000.00</p>
+                        <a href="" class="cart__design">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="project__image">
+                    <img src="images/hero/hot_kick1.jpg" alt="coffee shop image">
+                </div>
+                <div class="product__name">
+                    <a href="">
+                        <p>Shoe 4</p>
+                    </a>
+                    <div class="product_details">
+                        <p class="price">2000</p>
+                        <a href="" class="cart__design">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="project__image">
+                    <img src="images/hero/hot_kick1.jpg" alt="coffee shop image">
+                </div>
+                <div class="product__name">
+                    <a href="">
+                        <p>Shoe 4</p>
+                    </a>
+                    <div class="product_details">
+                        <p class="price">2000</p>
+                        <a href="" class="cart__design">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>   
+    
+    <!-- SWIPER -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true, // Enable looping
+            autoplay: {
+            delay: 4000, // Auto-scroll every 2 seconds
+            },
+            effect: 'slide', // or 'fade' for a fade effect
+            speed: 300,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
