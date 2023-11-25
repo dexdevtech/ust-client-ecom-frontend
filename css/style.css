@@ -283,6 +283,7 @@ nav button {
 
 .sale > h2 {
     color: var(--color-black);
+    font-family: 'Lexend Tera', sans-serif;
 }
 
 .sale__container {
@@ -291,7 +292,78 @@ nav button {
     gap: 1rem;
 }
 
+.sale__container article {
+    padding: 2rem 3rem;
+    border: 0.2rem solid var(--color-white);
+}
 
+.product__image a img {
+    border: 0.2rem solid transparent;
+    transition: var(--transition);
+}
+
+.product__image a img:hover {
+    border-color: var(--color-white);
+}
+
+.brand p {
+    font-size: 1.2rem;
+    font-family: 'Lexend Tera', sans-serif;
+    color: white;
+}
+
+.brand img {
+    width: 4rem;
+}
+
+.bottom__details {
+    position: relative;
+    bottom: -1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom__details .pricing {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+}
+
+.pricing .price__old {
+    text-decoration: line-through;
+}
+
+.pricing .price__discounted {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--color-black)
+}
+
+.bottom__details .cart__design {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.6rem;
+    width: 2.6rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.bottom__details .cart__design i {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.bottom__details .cart__design:hover {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
 
 
 
