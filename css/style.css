@@ -9,17 +9,9 @@
 
 :root {
     --color-primary: #b53f9b;
-    --color-danger: #e32d2d;
-    --color--success: #84f74e;
-    --color-warning: #f7f74e;
-    
     --color-white: #f9f6f6;
-    --color-light: rgba(255, 255, 255, 0.7);
     --color-black: #0e0e0e;
-    
     --color-bg: #b07aed;
-    --color-bg1: #763FB5;
-    --color-bg2: #9C3FB5; 
 
     --container-width-lg: 84%;
     --container-width-md: 90%;
@@ -93,31 +85,6 @@ section h2 {
     margin: 0 auto;
 }
 
-.btn {
-    display: inline-block;
-    width: 12rem;
-    padding: 1rem 2rem;
-    border: 1px solid transparent;
-    border-radius: 2rem; 
-    background: var(--color-white);
-    color: var(--color-black);
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.btn:hover {
-    background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
-}
-
-.btn-primary {
-    width: 12rem;
-    background: var(--color-danger);
-    color: var(--color-white);
-    font-weight: 500;
-}
-
 /* NAV */
 nav {   
     position: fixed;
@@ -162,8 +129,15 @@ nav {
 }
 
 .nav__links .search {
-    padding-right: 1rem;
+    position: relative;
     padding-bottom: 0.5rem;
+}
+
+.search a {
+    position: relative;
+    z-index: 5;
+    right: 30px;
+    transition: var(--transition);
 }
 
 .nav__links .search input { 
@@ -458,18 +432,21 @@ footer {
 }
 
 .footer__container a {
+    color: var(--color-white);
     transition: var(--transition);
 }
 
 .footer__container a:hover {
-    color: var(--color-white);
+    color: var(--color-primary);
 }
+
 .logo img{
     width: 9rem;
+    cursor: pointer;
 }
 
 .footer__container h3 {
-    color: white;
+    color: var(--color-primary);
     padding-bottom: .8rem;
 }
 
@@ -496,9 +473,32 @@ footer {
     padding-right: 1.2rem;
 }
 
+.rights__container {
+    border-top: 0.5px solid var(--color-white);
+    margin-top: 2rem;
+}
 
+.rights__container ul {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.3rem;
+}
 
+.rights__container ul li a{
+    color: var(--color-bg);
+    transition: var(--transition);
+}
 
+.rights__container ul li a:hover {
+    color: var(--color-white);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1140px) {
+
+}
 
 
 
