@@ -84,6 +84,8 @@ section {
 section h2 {
     margin-bottom: 2rem;
     text-align: center;
+    color: var(--color-black);
+    font-family: 'Lexend Tera', sans-serif;
 }
 
 .container {
@@ -281,11 +283,6 @@ nav button {
     background-color: var(--color-bg);
 }
 
-.sale > h2 {
-    color: var(--color-black);
-    font-family: 'Lexend Tera', sans-serif;
-}
-
 .sale__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -307,9 +304,9 @@ nav button {
 }
 
 .brand p {
+    color: white;
     font-size: 1.2rem;
     font-family: 'Lexend Tera', sans-serif;
-    color: white;
 }
 
 .brand img {
@@ -335,9 +332,9 @@ nav button {
 }
 
 .pricing .price__discounted {
+    color: var(--color-black);
     font-size: 1.4rem;
     font-weight: 900;
-    color: var(--color-black)
 }
 
 .bottom__details .cart__design {
@@ -364,6 +361,146 @@ nav button {
     color: var(--color-primary);
     border-color: var(--color-primary);
 }
+
+/* COLLECTIONS */
+.collections__container {
+    display: grid;
+    grid-template-columns: 10% 40% 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soon {
+    margin-bottom: -4rem;
+}
+
+.soon h1 {
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 4rem;
+    transform: rotate(270deg);
+}
+
+.collections__title h3 {
+    font-size: 1rem;
+    letter-spacing: 8px;
+    padding-bottom: 0.2rem;
+}
+
+.collections__jacket {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    background: linear-gradient(to right, #763FB5, black);
+}
+
+.newsletter__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newsletter__form .details {
+    padding-bottom: 1rem;;
+}
+
+.newsletter__form h4 {
+    text-align: center;
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 2rem;
+}
+
+.newsletter__form .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1.2rem;
+    width: 70vw;
+}
+
+.form input[type='email'] {
+    padding: 0.4rem;
+    height: 2rem;
+    font-family: 'Lexend Tera', sans-serif;
+    color: var(--color-primary);
+}
+
+.form input[type='submit'] {
+    padding: 0.4rem;
+    height: 2rem;
+    width: 8%;
+    font-family: 'Lexend Tera', sans-serif;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.form input[type='submit']:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    padding: 2rem 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__container a {
+    transition: var(--transition);
+}
+
+.footer__container a:hover {
+    color: var(--color-white);
+}
+.logo img{
+    width: 9rem;
+}
+
+.footer__container h3 {
+    color: white;
+    padding-bottom: .8rem;
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.about {
+    padding-top: 3.4rem;
+}
+
+.about__us, 
+.contact__us {
+    padding-bottom: .4rem;;
+}
+
+.socials ul {
+    display: flex;
+}
+
+.socials ul li {
+    padding-right: 1.2rem;
+}
+
+
+
+
+
+
 
 
 
