@@ -37,12 +37,11 @@
                     <a href=""><i class="bi bi-search-heart"></i></a>
                 </div>
                 <ul>
+                    <i class="bi bi-search-heart search__optional"></i>
                     <li><a href="cart"><i class="bi bi-cart3"></i></a></li>
                     <li><a href="user"><i class="bi bi-person"></i></a></li>
                 </ul>
             </div>
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
     
@@ -75,13 +74,34 @@
         <div class="category">
             <h3>SHOP BY CATEGORY</h3>
             <ul>
-                <li><a href="">MEN</a></li>
-                <li><a href="">WOMEN</a></li>
-                <li><a href="">KIDS</a></li>
+                <li><a href="" class="men__hover">MEN</a></li>
+                <div class="pop__up__men">
+                    <ul>
+                        <li><a href="">SHOES</a></li>
+                        <li><a href="">CLOTHING</a></li>
+                        <li><a href="">ACCESORIES</a></li>
+                    </ul>
+                </div>
+                <li><a href="" class="women__hover">WOMEN</a></li>
+                <div class="pop__up__women">
+                    <ul>
+                        <li><a href="">SHOES</a></li>
+                        <li><a href="">CLOTHING</a></li>
+                        <li><a href="">ACCESORIES</a></li>
+                    </ul>
+                </div>
+                <li><a href="" class="kids__hover">KIDS</a></li>
+                <div class="pop__up__kids">
+                    <ul>
+                        <li><a href="">SHOES</a></li>
+                        <li><a href="">CLOTHING</a></li>
+                        <li><a href="">ACCESORIES</a></li>
+                    </ul>
+                </div>
             </ul>
         </div>
         <div class="new_kicks">
-            <p>NEW KICKS!</p>
+            <p>FOOTWEAR FRENZY!</p>
             <div class="new_kicks_deals">
                 <article>
                     <div class="product">
@@ -347,7 +367,7 @@
         <div class="container rights__container">
             <ul>
                 <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms and Condition</a></li>
+                <li><a href="">Terms and Conditions</a></li>
                 <li><a href="">Cookies</a></li>
                 <li><a href="">Legal</a></li>
             </ul>
@@ -358,6 +378,7 @@
 
 
     <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>   
 
