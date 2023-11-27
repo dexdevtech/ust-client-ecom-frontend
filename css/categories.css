@@ -81,11 +81,26 @@
     text-decoration: underline;
 } 
 
-/* SHOP */
-.shop {
-    padding-top: calc(6rem + 3rem);
+/* MEDIA QUERIES */
+@media screen and (max-width: 1120px) {
+    .categories__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .sales__container article {
+        padding: 1rem 3rem;
+    }
 }
 
+@media screen and (max-width: 660px) {
+    .categories__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
 
 
 
