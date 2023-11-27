@@ -1,0 +1,254 @@
+:root {
+    --color-primary: #b53f9b;
+    --color-white: #f9f6f6;
+    --color-black: #0e0e0e;
+    --color-bg: #b07aed;
+
+    --container-width-lg: 84%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+/* PRODUCT CONTAINER */
+.product__container {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.product__logo {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.details h3 {
+    text-align: center;
+}
+
+.details p {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.variations {
+    display: flex;
+    gap: 0.4rem;
+    padding-bottom: 1.4rem;
+}
+
+.variations div {
+    padding: 0.4rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.variations div:hover {
+    border-color: var(--color-primary);
+}
+
+.circles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    width: 50%;
+    margin: 0 auto 2rem auto;
+    padding-top: 0.5rem;
+
+}
+
+.size {
+    background-color: var(--color-bg);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.size:hover {
+    border-color: var(--color-bg);
+    background-color: transparent;    
+}
+
+.size:hover p {
+    color: var(--color-bg);
+}
+
+.size p {
+    font-weight: 700;
+    color: white;
+    font-weight: 3rem;
+}
+
+.product__button {
+    background-color: var(--color-bg);
+    padding: 0.2rem 3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    cursor: pointer;
+}
+
+.product__button:hover {
+    border-color: var(--color-black);
+}
+
+.product__button i {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.product__button:hover i{
+    color: var(--color-black);
+}
+
+.primary__button {
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.primary__button i{
+    color: white;
+}
+
+.primary__button:hover {
+    background-color: transparent;
+    border-color: var(--color-primary);
+}
+
+.primary__button:hover i{
+    color: var(--color-primary);
+}
+
+.product__image {
+    padding: 1rem;
+    border: 0.4rem solid var(--color-primary);
+}
+
+/* DESCRIPTION */
+.description {
+    margin-top: -4rem;
+}
+
+.description__container h4 {
+    color: black;
+    padding-bottom: 0.6rem;
+    
+}
+
+.description__container p {
+    color: black;
+    padding-left: 2rem;
+    text-align: justify;
+}
+
+/* REVIEWS */
+.reviews {
+    margin-top: -4rem;
+}
+.reviews__container {
+    background: var(--color-bg);
+    color: black;
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+}
+.reviews__container h4 {
+    padding-bottom: 1rem;
+}
+
+.rev__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.review__name {
+    font-weight: 700;
+}
+
+.revs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.revs .user {
+    padding-right: 2rem;
+}
+
+.revs .user i {
+    font-size: 1.8rem;
+    color: var(--color-white);
+}
+
+.stars i {
+    color: yellow;
+}
+
+.comment__content {
+    width: 80%;
+}
+
+.comment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.comment input[type="text"]{
+    height: 2.6rem;
+    padding-left: 1rem;
+    font-family: 'Maven Pro', sans-serif;
+    width: 100%;
+    background-color: rgb(210, 210, 210);
+    border-radius: 2rem;
+}
+
+.comment i {
+    color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

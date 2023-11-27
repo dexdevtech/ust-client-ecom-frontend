@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@500;600;900&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/product_page.css">
+
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>Project Prototype</title>
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <div class="logo">
+                <a href="index">
+                    <img src="images/logo.jpg" alt="website logo">
+                </a>
+            </div>
+            <div class="nav__links">
+                <div class="search">
+                    <input type="text">
+                    <a href=""><i class="bi bi-search-heart"></i></a>
+                </div>
+                <ul>
+                    <i class="bi bi-search-heart search__optional"></i>
+                    <li><a href="cart"><i class="bi bi-cart3"></i></a></li>
+                    <li><a href="user"><i class="bi bi-person"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CATEGORIES -->
+    <div class="categories">
+        <ul>
+            <li><a href="" class="men__hover__">MEN</a></li>
+                <div class="pop__up__men__">
+                    <ul>
+                        <li><a href="">SHOES</a></li>
+                        <li><a href="">CLOTHING</a></li>
+                        <li><a href="">ACCESORIES</a></li>
+                    </ul>
+                </div>
+                <li><a href="" class="women__hover__">WOMEN</a></li>
+                <div class="pop__up__women__">
+                    <ul>
+                        <li><a href="">SHOES</a></li>
+                        <li><a href="">CLOTHING</a></li>
+                        <li><a href="">ACCESORIES</a></li>
+                    </ul>
+                </div>
+                <li><a href="" class="kids__hover__">KIDS</a></li>
+                <div class="pop__up__kids__">
+                    <ul>
+                        <li><a href="">SHOES</a></li>
+                        <li><a href="">CLOTHING</a></li>
+                        <li><a href="">ACCESORIES</a></li>
+                    </ul>
+                </div>
+        </ul>
+    </div>
+
+    <!-- PRODUCT -->
+    <section class="product__page">
+        <div class="container product__container">
+            <div class="details">
+                <div class="product__logo">
+                    <img src="images/men_shoes/logo/nike.png" alt="">
+                </div>
+                <h3>Product Name</h3>
+                <h2>1989</h2>
+
+                <p>PRODUCT VARIATIONS<p>
+                <div class="variations">
+                    <div class="variation" onclick="changeImage('images/women_clothes/model/front.png')">
+                        <img src="images/women_clothes/model/front.png" alt="">
+                    </div>
+                    <div class="variation" onclick="changeImage('images/women_clothes/model/close.png')">
+                        <img src="images/women_clothes/model/close.png" alt="">
+                    </div>
+                    <div class="variation" onclick="changeImage('images/women_clothes/model/back.png')">
+                        <img src="images/women_clothes/model/back.png" alt="">
+                    </div>
+                    <div class="variation" onclick="changeImage('images/women_clothes/model/run.png')">
+                        <img src="images/women_clothes/model/run.png" alt="">
+                    </div>
+                </div>
+
+                <p class="details__p">AVAILABLE SIZES</p>
+                <div class="circles">
+                    <div class="size">
+                        <p>XXS</p>
+                    </div>
+                    <div class="size">
+                        <p>XS</p>
+                    </div>
+                    <div class="size">
+                        <p>S</p>
+                    </div>
+                    <div class="size">
+                        <p>M</p>
+                    </div>
+                    <div class="size">
+                        <p>L</p>
+                    </div>
+                    <div class="size">
+                        <p>XL</p>
+                    </div>
+                    <div class="size">
+                        <p>XXL</p>
+                    </div>
+                </div>
+
+                <div class="product__button">
+                    <a href=""><i class="bi bi-cart3"></i></a>
+                </div>
+                <div class="product__button primary__button">
+                    <a href=""><i class="bi bi-check-lg"></i></a>
+                </div>
+            </div>
+            <div class="product__image">
+                <div class="display__image">
+                    <img src="images/women_clothes/model/front.png" alt="" id="mainImage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="description">
+        <div class="container description__container">
+            <h4>Description</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo molestiae sequi architecto odio tenetur excepturi corporis nostrum enim inventore porro, illum molestias aliquam recusandae, soluta et consectetur nesciunt iusto sed! Repellat alias ullam laborum temporibus omnis asperiores unde iusto nulla, inventore modi aut exercitationem deleniti facere cupiditate consequuntur dolorum provident pariatur, accusantium cum a, eligendi officia ipsa dolor quibusdam! Repellendus consectetur quia eaque, assumenda ipsa saepe voluptatem itaque numquam reprehenderit laborum sit eius modi ratione provident doloribus sapiente perspiciatis maiores dolorem natus deserunt placeat suscipit doloremque. Qui molestias officia a commodi! Totam quae eos inventore et reprehenderit aliquid numquam vitae corrupti illum earum obcaecati harum eius nam ratione commodi fugiat tempora culpa aliquam atque esse maxime, repellendus ab! Facilis temporibus quasi consequatur? Blanditiis hic aperiam delectus ullam vel quasi.</p>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+        <section class="reviews">
+            <div class="container reviews__container">
+                <h4>Reviews</h4>
+                <div class="rev__container">
+                    <div class="revs">
+                        <div class="user"><i class="bi bi-person-circle"></i></div>
+                        <div class="review__content">
+                            <div class="name">
+                                <div class="review__name">
+                                    <p>User Name</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores provident totam, deserunt ad vitae at qui minima impedit, nobis, maiores debitis quasi?</p>
+                        </div>
+                    </div>
+
+                    <div class="revs">
+                        <div class="user"><i class="bi bi-person-circle"></i></div>
+                        <div class="review__content">
+                            <div class="name">
+                                <div class="review__name">
+                                    <p>User Name</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores provident totam, deserunt ad vitae at qui minima impedit, nobis, maiores debitis quasi?</p>
+                        </div>
+                    </div>
+
+                    <div class="revs">
+                        <div class="user"><i class="bi bi-person-circle"></i></div>
+                        <div class="review__content">
+                            <div class="name">
+                                <div class="review__name">
+                                    <p>User Name</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores provident totam, deserunt ad vitae at qui minima impedit, nobis, maiores debitis quasi?</p>
+                        </div>
+                    </div>
+
+                    <div class="revs">
+                        <div class="user"><i class="bi bi-person-circle"></i></div>
+                        <div class="comment__content">
+                            <div class="comment">
+                                <input type="text">
+                                <a href=""><i class="bi bi-pencil-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer__container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <div class="footer__links">
+                <div class="shop">
+                    <h3>Shop By Category</h3>
+                    <ul>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Kids</a></li>
+                    </ul>
+                </div>
+                <div class="support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Return and Refund</a></li>
+                        <li><a href="">Promotions</a></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <div class="about__us">
+                        <a href="">About SportswearSource</a>
+                    </div>
+                    <div class="contact__us">
+                        <a href="">Contact Us</a>
+                    </div>
+                    <div class="socials">
+                        <ul>
+                            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                            <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
+                            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container rights__container">
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Legal</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+    <script src="js/categories.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>   
+
+    <!-- SWIPER -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true, // Enable looping
+            autoplay: {
+            delay: 4000, // Auto-scroll every 2 seconds
+            },
+            effect: 'slide', // or 'fade' for a fade effect
+            speed: 300,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
+
