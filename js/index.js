@@ -47,3 +47,23 @@ kids__pop__up.addEventListener('mouseover', () => {
 kids__pop__up.addEventListener('mouseout', () => {
     kids__pop__up.style.display = "none";
 });
+
+// POP UP
+const pop__up = document.querySelector('.pop__up');
+const close__pop__up = document.querySelector('.close__pop__up');
+const close__pop__up__secret = document.querySelector('.secret__button');
+
+close__pop__up.addEventListener('click', () => {
+    pop__up.style.display = 'none';
+});
+
+close__pop__up__secret.addEventListener('click', () => {
+    pop__up.style.display = 'none';
+});
+
+
+
+
+
+
+

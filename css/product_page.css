@@ -231,7 +231,19 @@
     cursor: pointer;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    /* PRODUCT CONTAINER */
+    .product__container {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .product__image {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
 
 
 
