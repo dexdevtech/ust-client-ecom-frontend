@@ -1,0 +1,67 @@
+:root {
+    --color-primary: #b53f9b;
+    --color-white: #f9f6f6;
+    --color-black: #0e0e0e;
+    --color-bg: #b07aed;
+
+    --container-width-lg: 84%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+/* PAYMENT */
+.product__button {
+    background-color: var(--color-bg);
+    padding: 0.2rem 4rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.product__button select {
+    font-size: 1rem;
+    color: var(--color-primary);
+    transition: var(--transition);
+    font-family: 'Lexend Tera', sans-serif;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+}
+
+.product__button:hover select {
+    color: var(--color-black);
+}
+
+.primary__button {
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.primary__button a {
+    color: white;
+    font-family: 'Lexend Tera', sans-serif;
+    padding-top: 0.4rem;
+
+}
+
+.primary__button:hover {
+    background-color: transparent;
+    border-color: var(--color-primary);
+}
+
+.primary__button:hover a{
+    color: var(--color-primary);
+}
+
+
+
+
+
+
+
+
+

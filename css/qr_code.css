@@ -1,0 +1,18 @@
+.payment__container {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.payment__container
+
+.qr__image {
+    width: 25%;
+}
+
+h1 {
+    font-family: 'Lexend Tera', sans-serif;
+
+}

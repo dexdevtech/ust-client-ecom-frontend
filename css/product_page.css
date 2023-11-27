@@ -1,16 +1,3 @@
-:root {
-    --color-primary: #b53f9b;
-    --color-white: #f9f6f6;
-    --color-black: #0e0e0e;
-    --color-bg: #b07aed;
-
-    --container-width-lg: 84%;
-    --container-width-md: 90%;
-    --container-width-sm: 94%;
-
-    --transition: all 400ms ease;
-}
-
 /* PRODUCT CONTAINER */
 .product__container {
     display: grid;
