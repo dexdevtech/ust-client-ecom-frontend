@@ -1,0 +1,35 @@
+/* USER */
+.user__container {
+    display: grid;
+    grid-template-columns: 20% 35% 35%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.orders p {
+    margin: 2.2rem 0 1rem 0;
+}
+
+.vouchers {
+    margin-top: 1.6rem;
+}
+.vouchers h2 {
+    font-size: 1.5rem;
+}
+
+.newbie {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1140px) {
+    .user__container {
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .user__brand {
+        display: flex;
+        justify-content: center;
+    }  
+    
+}

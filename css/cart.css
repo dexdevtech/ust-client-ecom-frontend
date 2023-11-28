@@ -1,0 +1,39 @@
+/* CART */
+.cart {
+    margin: 4rem 0;
+    font-family: 'Lexend Tera', sans-serif;
+    color: black;
+}
+
+.right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.right i {
+    font-size: 1.4rem;
+}
+
+.left {
+    margin: 2rem auto 0;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left .box {
+    border: 0.2rem solid black ;
+    padding: 6rem 8rem;
+    cursor: pointer;
+}
+
+.left .box i {
+    font-size: 4rem;
+}
+
+
+
+
+
+
